@@ -20,7 +20,7 @@ namespace assignment1.Test
             _scenarioContext = scenarioContext;
         }
 
-        [Given(@"a natural number farenheit temperature")]
+        [Given(@"a natural number")]
         public void Givenanaturalnumber()
         {
             Assert.True(num % 1 == 0);

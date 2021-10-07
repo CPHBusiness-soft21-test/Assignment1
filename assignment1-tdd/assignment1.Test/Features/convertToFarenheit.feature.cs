@@ -109,7 +109,7 @@ namespace assignment1.Test.Features
             {
                 this.ScenarioStart();
 #line 3
-        testRunner.Given("a natural number celcius temperature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+        testRunner.Given("a natural number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 4
         testRunner.When("inserted into celcius converter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

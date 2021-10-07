@@ -19,12 +19,6 @@ namespace assignment1.Test
             _scenarioContext = scenarioContext;
         }
 			
-        [Given(@"a natural number celcius temperature")]
-        public void Givenanaturalnumber()
-        {
-            Assert.True(num % 1 == 0);
-        }
-
         [When(@"inserted into celcius converter")]
         public void Wheninsertedintoconverter()
         {
