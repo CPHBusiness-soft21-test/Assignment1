@@ -19,7 +19,7 @@ namespace assignment1.Test.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class ConvertingTemperatureToCelciusFeature : object, Xunit.IClassFixture<ConvertingTemperatureToCelciusFeature.FixtureData>, System.IDisposable
+    public partial class ConvertingTemperatureToFarenheitFeature : object, Xunit.IClassFixture<ConvertingTemperatureToFarenheitFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace assignment1.Test.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "convertToCelcius.feature"
+#line 1 "convertToFarenheit.feature"
 #line hidden
         
-        public ConvertingTemperatureToCelciusFeature(ConvertingTemperatureToCelciusFeature.FixtureData fixtureData, assignment1_Test_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public ConvertingTemperatureToFarenheitFeature(ConvertingTemperatureToFarenheitFeature.FixtureData fixtureData, assignment1_Test_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace assignment1.Test.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Converting temperature to celcius", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Converting temperature to farenheit", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,16 +80,16 @@ namespace assignment1.Test.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Converting temperature from farenheit to celcius")]
-        [Xunit.TraitAttribute("FeatureTitle", "Converting temperature to celcius")]
-        [Xunit.TraitAttribute("Description", "Converting temperature from farenheit to celcius")]
-        public virtual void ConvertingTemperatureFromFarenheitToCelcius()
+        [Xunit.SkippableFactAttribute(DisplayName="Converting temperature from celcius to farenheit")]
+        [Xunit.TraitAttribute("FeatureTitle", "Converting temperature to farenheit")]
+        [Xunit.TraitAttribute("Description", "Converting temperature from celcius to farenheit")]
+        public virtual void ConvertingTemperatureFromCelciusToFarenheit()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Converting temperature from farenheit to celcius", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 5
-this.ScenarioInitialize(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Converting temperature from celcius to farenheit", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 2
+    this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -108,14 +108,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
-    testRunner.Given("a natural number farenheit temperature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 3
+        testRunner.Given("a natural number celcius temperature", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 7
-    testRunner.When("inserted into farenheit converter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 4
+        testRunner.When("inserted into celcius converter", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 8
-    testRunner.Then("first temperature is converted to celcius", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 5
+        testRunner.Then("first temperature is converted to farenheit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -128,12 +128,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                ConvertingTemperatureToCelciusFeature.FeatureSetup();
+                ConvertingTemperatureToFarenheitFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                ConvertingTemperatureToCelciusFeature.FeatureTearDown();
+                ConvertingTemperatureToFarenheitFeature.FeatureTearDown();
             }
         }
     }
